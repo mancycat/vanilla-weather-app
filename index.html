@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Weather App</title>
+    
 </head>
     <div class="container">
     <div class="child">
@@ -15,6 +16,7 @@
         <div class="card-body">
           <br />
           <br />
+          <br>
            <form>
             <div class="form-row">
               <div class="col">
@@ -56,45 +58,43 @@
 
               </div>
             </div>
-
-            <div class="row">
-                <div class="col-3">
-                  <img
-                    class="tempIconMain"
-                    src="visuals/sun.svg"
-                    alt="weather icon for Today"
-                    style="vertical-align:middle"
-                  />
-                </div>
-                <div class="col-4">
                   <div class="todayCity" id="current-city">Sydney</div>
-                    <span class="todayDay todayContent" id="current-day">
-                    Sun
-                    </span>
+                  <br>
+                  <div>
                   <span class="todayDate todayContent" id="current-date">
                     15/08
                   </span>
+                    <span class="todayDay todayContent" id="current-day">
+                    Sun
+                    </span>
+
                   <span class="todayTime todayContent" id="current-time">
                     17:35
                   </span>
                 </div>
-                <div class="col-2 todayTemp" id="current-temp">
-                  24
-                </div>
-
-                <div class="col-3">
-                  <div class="todayContent2 todayDegree" id="current-metric">
-                    °C
-                  </div>
+            <div class="row">
+                <div class="col-4">
                   <div class="todayContent2 humidity">Humidity: 30%</div>
                   <div class="todayContent2 wind">Wind: 4km/h</div>
                 </div>
+                <div class="col-4">
+                  <img
+                    class="tempIconMain"
+                    src="visuals/sun.svg"
+                    alt="w icon"
+                    style="vertical-align:middle"
+                  />
+                </div>
+                <div class="col-4 todayTemp" id="current-temp">
+                  24
+                <span class="todayDegree" id="current-metric">
+                  °C
+                </span>
+                </div>
+
               </div>
             </div>
 
-            <br />
-            <br />
-            <br />
             <div class="row forecast">
               <div class="col-1"></div>
               <div class="col-2 week">
@@ -103,10 +103,10 @@
                 <img
                   class="tempIcon"
                   src="visuals/sun.svg"
-                  alt="weather icon for Monday"
+                  alt="w icon"
                 />
                 <div class="highTemp futureTemp">
-                  24°C <span>/</span
+                  24°C <span></span
                   ><span class="lowTemp futureTemp"> 21°C</span>
                 </div>
               </div>
@@ -116,24 +116,24 @@
                 <img
                   class="tempIcon"
                   src="visuals/sun.svg"
-                  alt="weather icon for Tuesday"
+                  alt="w icon"
                 />
                 <div class="highTemp futureTemp">
-                  24°C <span>/</span>
+                  24°C <span></span>
                   <span class="lowTemp futureTemp"> 21°C</span>
                 </div>
               </div>
-
+              
               <div class="col-2 week">
                 Wed
                 <div class="date">18/08</div>
                 <img
                   class="tempIcon"
                   src="visuals/cloud-sun.svg"
-                  alt="weather icon for Wednesday"
+                  alt="w icon"
                 />
                 <div class="highTemp futureTemp">
-                  24°C <span>/</span
+                  24°C <span></span
                   ><span class="lowTemp futureTemp"> 21°C</span>
                 </div>
               </div>
@@ -143,10 +143,10 @@
                 <img
                   class="tempIcon"
                   src="visuals/cloud-sun-rain.svg"
-                  alt="weather icon for Thursday"
+                  alt="w icon"
                 />
                 <div class="highTemp futureTemp">
-                  24°C <span>/</span
+                  24°C <span></span
                   ><span class="lowTemp futureTemp"> 21°C</span>
                 </div>
               </div>
@@ -156,16 +156,15 @@
                 <img
                   class="tempIcon"
                   src="visuals/rain.svg"
-                  alt="weather icon for Friday"
+                  alt="w icon"
                 />
                 <div class="highTemp futureTemp">
-                  24°C <span>/</span
+                  24°C <span> </span
                   ><span class="lowTemp futureTemp"> 21°C</span>
                 </div>
               </div>
               <div class="col-1"></div>
             </div>
-            <br />
             <br />
             <br />
           </form>
