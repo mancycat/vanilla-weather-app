@@ -43,7 +43,7 @@ function UpdateTime() {
   currentDate.innerHTML = `${date}/${month}/${year}`;
 
   let currentDay = document.querySelector("#current-day");
-  currentDay.innerHTML = `${day}`;
+  currentDay.innerHTML = `(${day})`;
 
   let currentHrMin = document.querySelector("#current-time");
   currentHrMin.innerHTML = `${hour}:${minute}`;
@@ -61,6 +61,8 @@ function CurrentTemperatureC(response) {
 
   let currentMetric = document.querySelector("#current-metric");
   currentMetric.innerHTML = `°C`;
+
+  
 }
 
 function UpdateCityTemperatureC() {
@@ -113,12 +115,11 @@ FButton.addEventListener("click", UpdateCityTemperatureF);
 //Functions for Current Button to recall temperature data based on browser's current geolocation//
 
 function UpdateCurrentTemperature(response) {
-  document.querySelector(
-    "#current-city"
-  ).innerHTML = `${response.data.name}`;
+  document.querySelector("#current-city").innerHTML = `${response.data.name}`;
 
   let roundedTemperature = Math.round(response.data.main.temp);
-  let humidityPercentage =(response.data.main.humidty);
+  let humidityPercentage =(response.data.main.humidity);
+  let windSpeedKm =(response.data.wind.speed);
 
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = `${roundedTemperature}`;
@@ -126,8 +127,11 @@ function UpdateCurrentTemperature(response) {
   let currentMetric = document.querySelector("#current-metric");
   currentMetric.innerHTML =`°C`;
 
-  let currentHumidity = document.querySelector("#humidity");
-  currentHumidity.innerHTML = `Humidity: ${humidityPercentage}%`;
+  let currentHumidity = document.querySelector("#humidityData");
+  currentHumidity.innerHTML = `${humidityPercentage}%`;
+
+  let currentWindSpeed = document.querySelector("#windData");
+  currentWindSpeed.innerHTML=`${windSpeedKm}`
 }
 
 function CurrentPositionTemperature(position) {
