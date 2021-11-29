@@ -13,11 +13,19 @@ background: radial-gradient(circle at 10% 20%, rgb(242, 235, 243) 0%, rgb(234, 2
   top: 150px;
   border-radius: 0.75rem;
   background:white;
-  width: 550px;
+  width: 560px;
 }
 
 .form-row{
     padding: 0px 20px;
+}
+.sectionDivider{
+  position:relative;
+  display: block;
+  margin: 0 auto;
+  top: -25px;
+  max-width: 80%;
+  color: #DEDBE2;
 }
 .signature{
   position: relative;

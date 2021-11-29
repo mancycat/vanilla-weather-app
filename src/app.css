@@ -6,7 +6,7 @@
 }
 .weatherButton{
     position: relative;
-    top: -53px;
+    top: -52px;
     left: 140px;
 }
 
@@ -35,9 +35,9 @@
 
 .todayCity {
   position: relative;
-  top: −80px;
+  top: −100px;
   left: 60px;
-  font-size: 45px;
+  font-size: 40px;
   color: #5a6268;
 }
 .todayContent {
@@ -76,10 +76,11 @@
 
 .todayDegree {
   position: relative;
-  top: -40px;
-  left: -20px;
+  top: -190px;
+  left: 450px;
   text-align: left;
-  font-size: 30px;
+  font-size: 25px;
+  color: #5a6268;
 }
 .forecast {
   position: relative; 
